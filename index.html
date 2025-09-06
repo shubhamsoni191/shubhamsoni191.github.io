@@ -21,7 +21,7 @@
     }
 
     header h1 {
-      margin: 0;
+      margin: 1rem 0 0;
       font-size: 2rem;
       font-weight: 600;
     }
@@ -30,6 +30,15 @@
       margin-top: 0.5rem;
       font-size: 1.1rem;
       font-weight: 300;
+    }
+
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #fff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
     }
 
     .container {
@@ -94,11 +103,17 @@
       .container {
         padding: 1.2rem;
       }
+      .profile-pic {
+        width: 100px;
+        height: 100px;
+      }
     }
   </style>
 </head>
 <body>
   <header>
+    <!-- Replace profile.jpg with your actual image file -->
+    <img src="profile.jpg" alt="Shubham Soni" class="profile-pic">
     <h1>Shubham Soni</h1>
     <p>Senior Java & AWS Backend Developer | 7+ Years Experience</p>
   </header>
