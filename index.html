@@ -3,40 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <title>Shubham Soni - Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: "Segoe UI", Arial, sans-serif;
       margin: 0;
-      background: #f9fafc;
+      background: #f5f7fa;
       color: #333;
       line-height: 1.6;
     }
 
     header {
-      background: #2c3e50;
+      background: #1a1a1a;
       color: #fff;
-      padding: 2rem 1rem;
+      padding: 2.5rem 1rem;
       text-align: center;
     }
 
     header h1 {
       margin: 0;
-      font-size: 2.5rem;
+      font-size: 2rem;
+      font-weight: 600;
     }
 
     header p {
-      margin: 0.5rem 0 0;
+      margin-top: 0.5rem;
       font-size: 1.1rem;
+      font-weight: 300;
     }
 
     .container {
-      width: 85%;
+      width: 90%;
       max-width: 900px;
       margin: 2rem auto;
       background: #fff;
       padding: 2rem;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
     }
 
     section {
@@ -44,19 +47,25 @@
     }
 
     h2 {
-      border-bottom: 2px solid #eee;
-      padding-bottom: 0.5rem;
+      border-bottom: 2px solid #eaeaea;
+      padding-bottom: 0.4rem;
       margin-bottom: 1rem;
-      color: #2c3e50;
+      color: #1a1a1a;
+      font-size: 1.3rem;
+      font-weight: 500;
     }
 
     ul {
-      list-style-type: square;
-      padding-left: 1.5rem;
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin: 0.4rem 0;
     }
 
     a {
-      color: #2980b9;
+      color: #0066cc;
       text-decoration: none;
     }
 
@@ -65,57 +74,69 @@
     }
 
     .contact p {
-      margin: 0.3rem 0;
+      margin: 0.4rem 0;
     }
 
     footer {
       text-align: center;
       padding: 1rem;
-      background: #2c3e50;
+      background: #1a1a1a;
       color: #fff;
-      margin-top: 2rem;
       font-size: 0.9rem;
+      margin-top: 2rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+      .container {
+        padding: 1.2rem;
+      }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Hello, I’m Shubham Soni 👋</h1>
-    <p>Senior Java + AWS Developer | 7 years experience | Deloitte USI</p>
+    <h1>Shubham Soni</h1>
+    <p>Senior Java & AWS Backend Developer | 7+ Years Experience</p>
   </header>
 
   <div class="container">
     <section>
       <h2>About Me</h2>
-      <p>I am passionate about backend development, cloud (AWS), and building scalable systems. I enjoy solving real-world problems with clean, efficient code and scalable design patterns.</p>
+      <p>I am a backend developer specializing in Java and AWS with over seven years of experience designing, building, and scaling enterprise-grade applications. My focus is on writing clean, maintainable code and delivering reliable systems that solve business problems effectively.</p>
     </section>
 
     <section>
       <h2>Skills</h2>
       <ul>
-        <li>Java, Spring Boot</li>
-        <li>AWS (SAA + CCP certified)</li>
-        <li>System Design, REST APIs, Microservices</li>
-        <li>CI/CD, Jenkins, Docker, Kubernetes</li>
+        <li><strong>Languages:</strong> Java, Python, SQL</li>
+        <li><strong>Frameworks:</strong> Spring Boot, Hibernate, JUnit</li>
+        <li><strong>Cloud & DevOps:</strong> AWS (SAA & CCP Certified), Jenkins, Docker, Kubernetes, PCF</li>
+        <li><strong>Methodologies:</strong> Agile, Microservices, System Design</li>
       </ul>
     </section>
 
     <section>
       <h2>Projects</h2>
-      <p><a href="https://github.com/shubhamsoni191/gitlytics" target="_blank">Gitlytics - GitHub Analytics Tool</a></p>
-      <p><a href="https://github.com/shubhamsoni191/paintball" target="_blank">Simple Paintball - Minecraft Plugin</a></p>
+      <ul>
+        <li><a href="https://github.com/shubhamsoni191/gitlytics" target="_blank">Gitlytics</a> – Full-stack GitHub analytics tool using Flask, React, PostgreSQL, Docker.</li>
+        <li><a href="https://github.com/shubhamsoni191/paintball" target="_blank">Simple Paintball</a> – Minecraft plugin with 2k+ downloads, continuous delivery with TravisCI.</li>
+      </ul>
     </section>
 
     <section class="contact">
       <h2>Contact</h2>
       <p>Email: <a href="mailto:shubhamsoni191@gmail.com">shubhamsoni191@gmail.com</a></p>
-      <p><a href="https://www.linkedin.com/in/shubham-s-58337a134/" target="_blank">LinkedIn</a></p>
-      <p><a href="https://github.com/shubhamsoni191" target="_blank">GitHub</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/shubham-s-58337a134/" target="_blank">linkedin.com/in/shubham-s-58337a134</a></p>
+      <p>GitHub: <a href="https://github.com/shubhamsoni191" target="_blank">github.com/shubhamsoni191</a></p>
     </section>
   </div>
 
   <footer>
-    © 2025 Shubham Soni | Built with ❤️ using HTML & CSS
+    © 2025 Shubham Soni
   </footer>
 </body>
 </html>
