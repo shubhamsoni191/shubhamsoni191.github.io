@@ -16,20 +16,32 @@
     header {
       background: #1a1a1a;
       color: #fff;
-      padding: 2.5rem 1rem;
-      text-align: center;
+      padding: 2rem 1rem;
     }
 
-    header h1 {
-      margin: 1rem 0 0;
+    .header-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .header-text h1 {
+      margin: 0;
       font-size: 2rem;
       font-weight: 600;
     }
 
-    header p {
+    .header-text p {
       margin-top: 0.5rem;
       font-size: 1.1rem;
       font-weight: 300;
+      color: #ddd;
+    }
+
+    .header-photo {
+      flex-shrink: 0;
     }
 
     .profile-pic {
@@ -95,27 +107,30 @@
       margin-top: 2rem;
     }
 
-    /* Responsive */
+    /* Responsive for mobile */
     @media (max-width: 600px) {
-      header h1 {
-        font-size: 1.5rem;
+      .header-container {
+        flex-direction: column;
+        text-align: center;
       }
-      .container {
-        padding: 1.2rem;
-      }
-      .profile-pic {
-        width: 100px;
-        height: 100px;
+      .header-photo {
+        margin-top: 1rem;
       }
     }
   </style>
 </head>
 <body>
   <header>
-    <!-- Replace profile.jpg with your actual image file -->
-    <img src="profile.jpg" alt="Shubham Soni" class="profile-pic">
-    <h1>Shubham Soni</h1>
-    <p>Senior Java & AWS Backend Developer | 7+ Years Experience</p>
+    <div class="header-container">
+      <div class="header-text">
+        <h1>Shubham Soni</h1>
+        <p>Senior Java & AWS Backend Developer | 7+ Years Experience</p>
+      </div>
+      <div class="header-photo">
+        <!-- Replace profile.jpg with your actual image -->
+        <img src="profile.jpg" alt="Shubham Soni" class="profile-pic">
+      </div>
+    </div>
   </header>
 
   <div class="container">
